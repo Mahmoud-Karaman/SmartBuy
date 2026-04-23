@@ -58,8 +58,10 @@ p.first{
 
 
 .all{
-	/* background-image:url("Gemini_Generated_Image_bo0lambo0lambo0l.png"); */
-	background-image:url("./v617batch2-kul-01-technology.jpg");
+	
+	
+	background:#1b161a;
+
 	background-repeat:no-repeat;
     
 	background-size:cover;
