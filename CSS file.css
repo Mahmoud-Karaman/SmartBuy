@@ -1,5 +1,5 @@
 .start{
-	background:#1b161a;
+	background:#353d38;
 	color:#eae9f0;
 	padding:10px;
 	margin:0;
@@ -50,6 +50,21 @@ p.first{
 	font-size:80px;
 	color:white;
 	font-family:"Tahoma";
+}
+
+.getstart{
+	
+	margin-top:40px;
+	padding-bottom:20px;
+	background-color:#c93f3fe6;
+	cursor:pointer;
+	
+	padding-top:20px;
+	width:15%;
+	
+}
+.rl{
+	font-size:30px;
 }
 	
 	
