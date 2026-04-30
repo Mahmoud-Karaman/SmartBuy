@@ -34,18 +34,21 @@ h1{
 	
 	display:flex;
 	margin-right:10%;
+	width:90%;
+	max-width:500px;
+	
 	
 	
 }
 .Categories{
-	/* border-radius:7px 0 0 7px; */
-	border-radius:15px;
+	border-radius:10px 0 10px 0;
 	background-color: #f3f3f3;
 	cursor:pointer;	
 	
 }
 .searching{
 	display:flex;
+	width:100%;
 	
 }
 .searching input {
