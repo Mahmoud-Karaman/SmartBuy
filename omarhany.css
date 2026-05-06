@@ -16,7 +16,7 @@ body{
 	padding: 15px 30px;
 	position:sticky;
 	top:0;
-	z-index:0;
+	z-index:1000;
 }
 h1{
 	color:#ffbbbbdb;
@@ -33,29 +33,18 @@ h1{
     font-weight: bold;
     font-size: 18px;
 }
-.product-search{
+.searching{
 	
 	display:flex;
-	margin-right:10%;
-	width:90%;
+	width:100%;
 	max-width:500px;
 	
 	
-	
-}
-.Categories{
-	border-radius:10px 0 10px 0;
-	background-color: #f3f3f3;
-	cursor:pointer;	
-	
-}
-.searching{
-	display:flex;
-	width:100%;
+	justify-content:center;
 	
 }
 .searching input {
-    width: 300px;
+    width: 500px;
     height: 40px;
     padding: 0 15px;
     border: none;
@@ -99,8 +88,8 @@ h1{
     color: white;
     border: 1px solid white
 }
-	
-	
+
+
 	
 header{
     background-color : rgb(72, 78, 154);
@@ -131,8 +120,8 @@ header{
   gap: 20px; 
   overflow-x: auto; 
   padding: 20px;
-  scroll-behavior: smooth;
-  align-items: stretch;
+  scroll-behavior:smooth;
+  align-items:stretch;
 }
 
 
