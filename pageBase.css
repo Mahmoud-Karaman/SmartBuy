@@ -1,10 +1,107 @@
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  background-color:#232f3e;
+  align-items:center;
+  padding: 15px 30px;
+  position: fixed;
+  width: 95%;
+  top:0;
+  z-index:1000;
+}
+h1{
+  color:#ffbbbbdb;
+  margin:0;
+}
+.list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.list li a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.searching{
+
+  display:flex;
+  width:100%;
+  max-width:500px;
+
+
+  justify-content:center;
+
+}
+.searching input {
+    width: 500px;
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+.searching input::placeholder {
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.searching button {
+    background-color: #ff9900;
+    border: none;
+    border-radius: 15px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Account{
+  display:flex;
+  gap:20px;
+}
+.Account button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-signup {
+    background-color: #ff9900;
+    color: #232f3e;
+}
+
+.btn-login, .btn-signin {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white
+}
+
 body {
   font-family: sans-serif;
   background: #111;
   color: white;
 }
-
 .cars {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.img {
+  width: 70%;
+  position: relative;
+  height: 400px;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .cars {
   position: relative;
   width: 98vw;
   height: 95vh;
@@ -12,15 +109,15 @@ body {
 
 .img {
   position: absolute;
-  width: 45vw;
-  height: 45vh;
+  width: 75vw;
+  height: 85vh;
 }
 
 .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .img a {
   position: absolute;
@@ -50,8 +147,35 @@ body {
   background: #1e7e34;
 }
 
+ .one {margin-top: 150px; left: 15%; }
+.two {  left: 15%; }
+.three { left:15%; }
+.four { margin-bottom: 50px; left: 15%; }
 
-.one {top: 15px; left: 40px; }
-.two { top: 15px; left: 52%; }
-.three { top: 53%; left: 40px; }
-.four { top: 53%; left: 52%; }
+.btn {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: red;
+  color: white;
+}
+.btn:hover {
+  background: #e11a1a;
+}
+
+
+body.light-mode {
+  background: white;
+  color: #111;
+}
+
+body.light-mode .back {
+  background: #111;
+  color: white;
+}
+
+body.light-mode img{
+  border: 1px #111 solid;
+}
