@@ -147,9 +147,9 @@ body {
   background: #1e7e34;
 }
 
- .one {margin-top: 150px; left: 15%; }
+ .one { left: 15%; }
 .two {  left: 15%; }
-.three { left:15%; }
+.three {margin-top: 150px; left:15%; }
 .four { margin-bottom: 50px; left: 15%; }
 
 .btn {
@@ -165,13 +165,12 @@ body {
   background: #e11a1a;
 }
 
-
 body.light-mode {
   background: white;
   color: #111;
 }
 
-body.light-mode .back {
+body.light-mode .buy {
   background: #111;
   color: white;
 }
