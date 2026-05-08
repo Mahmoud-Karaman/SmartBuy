@@ -1,0 +1,132 @@
+
+body {
+    background-image: url("pexels-steve-26756127.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.Log_in_page {
+    width: 560px;
+    margin: 80px auto;
+    min-height: 400px;
+    position: relative;
+    padding: 60px 20px 30px 20px;
+    background-color: rgba(216, 147, 23, 0.16);
+    box-sizing: border-box;
+}
+
+.Log_in_page img {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    border-radius: 50%;
+}
+
+.Log_in_page a {
+    display: block;
+    color: #111;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Log_in_page h1 {
+    margin: 0;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.Log_in_page label {
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    width: auto;
+    white-space: nowrap;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.first_last {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cont_first, .cont_last {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.FN, .LN {
+    width: 100%;
+    box-sizing: border-box;
+	/* background-color:#0b25842b; */
+}
+
+.selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+	
+}
+
+.selection label {
+    display: inline-block;
+    margin: 0;
+}
+
+.em, .US, .PASS {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    box-sizing: border-box;
+	/* background-color:#0b25842b; */
+}
+
+.Log_in_page input[type="text"],
+.Log_in_page input[type="password"],
+.Log_in_page input[type="email"],
+.Log_in_page select {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 15px;
+    box-sizing: border-box;
+	background-color:#0f09a726;
+}
+
+.Log_in_page input[type="submit"] {
+    display: block;
+    width: 80%;
+    margin: 25px auto;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 45px;
+    background-color: orange;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.Log_in_page input[type="submit"]:hover {
+    transform: scale(1.05);
+}	
+	

@@ -1,0 +1,117 @@
+body{
+	background-image:url("pexels-steve-13551570.jpg");
+	background-size:cover;
+	justify-content:center;
+	text-align:center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	/* align-items:center; */
+	
+	
+}
+
+.Log_in_page{
+	width:470px;
+	height:550px;
+	position:absolute;
+	
+	background-color:#d8931729;
+	box-sizing:border-box;
+	right:35%;
+	top:10%;
+	
+	/* position:absolute; */
+	
+	
+	
+}
+
+.Log_in_page img{
+	position:relative;
+	
+	bottom:10%;
+	
+	
+	
+}
+
+
+
+
+.Log_in_page h1{
+	margin:0;
+	padding:20px;
+	text-align:center;
+	color:#fff;
+	
+}
+	
+	
+
+
+.Log_in_page label{
+	
+	font-weight:bold;
+	color:#fff;
+	display:flex;
+	font-size:20px;
+	margin-left:5px;
+	
+}
+
+.Log_in_page input{
+	width:100%;
+	margin: 20px 0;
+	
+}
+
+
+.Log_in_page input[type="text"],
+.Log_in_page input[type="password"]{
+	border: none;
+	outline: none;
+	height:40px;
+	border-bottom: 1px solid blue;
+	background:transparent;
+	font-size:16px;
+	color:#fff;
+	
+	
+}
+
+.Log_in_page input[type="submit"]{
+	
+	border:none;
+	outline:none;
+	color:#fff;
+	height:40px;
+	background-color:orange;
+	font-size:18px;
+	border-radius:15px;
+	transition:0.5s ease;
+	cursor:pointer;
+	
+	
+	
+	
+}
+
+.Log_in_page input[type="submit"]:hover{
+	
+	transform: scale(1.1);
+	
+
+}
+
+.Log_in_page a{
+	color:black;
+	font-weight:solid;
+	font-size:17px;
+	transition: .5s ease;
+}
+.Log_in_page a :hover{
+	transform:scale(1.1);
+
+}	
+	
+	
+}
