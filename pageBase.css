@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
   display:flex;
   justify-content:space-between;
   background-color:#232f3e;
@@ -78,7 +78,153 @@ h1{
     background-color: transparent;
     color: white;
     border: 1px solid white
+} */
+
+
+
+body{
+	overflow-x:hidden;
+
 }
+
+.navbar{
+	display:flex;
+	justify-content:space-between;
+	background-color:#232f3e;
+	align-items:center;
+	padding: 15px 30px;
+	position:fixed;
+	width:100%;
+	top:0;
+	z-index:1000;
+}
+h1{
+	color:#ffbbbbdb;
+}
+.list{
+	list-style:none;
+	display:flex;
+	gap:20px;
+
+
+	padding:0;
+	margin:0;
+}
+
+.list li a {
+    color: #ede6e6ba;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.list a{
+	display:inline-block;
+	transition:.5s ease;
+	text-decoration:none;
+
+}
+.list a:hover{
+	transform:scale(1.1);
+
+}
+
+
+
+.searching{
+
+	display:flex;
+	max-width:500px;
+
+	justify-content:center;
+
+}
+.searching input {
+    width: 500px;
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+	transition:background-color .5s ease;
+}
+
+
+
+.searching input::placeholder {
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.searching button {
+    background-color: #ff9900;
+    border: none;
+    border-radius: 15px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+	transition:background-color .5s ease;
+}
+.searching button:hover{
+
+	background-color:#a4680d;
+}
+.Account{
+	display:flex;
+	gap:20px;
+}
+.Account button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+	transition: .5s ease;
+
+}
+.Account button:hover{
+	transform:scale(1.1);
+
+}
+
+
+.btn-signup {
+    background-color: #ff9900;
+    color: #232f3e;
+
+}
+.btn-signup a{
+	text-decoration:none;
+	color:black;
+
+}
+
+
+ .btn-login a {
+	text-decoration:none;
+	color:white;
+
+ }
+
+ .btn-login {
+    background-color:transparent ;
+    color: white;
+    border: 1px solid white;
+	text-decoration:none;
+
+}
+.btn-signout{
+    color: white;
+    border: 1px solid white;
+
+
+}
+.btn-signout a{
+	text-decoration:none;
+	color:black;
+}
+
 
 body {
   font-family: sans-serif;
