@@ -163,9 +163,7 @@ h1{
     margin-bottom: 30px;
 }
 
-.emoji-group input {
-    display: none; 
-}
+.emoji-group input { display: none; }
 
 
 .emoji-group label {
