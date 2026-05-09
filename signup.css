@@ -35,6 +35,11 @@ body {
     margin-bottom: 15px;
     text-align: center;
     text-decoration: none;
+	transition:color.2s ease;
+}
+.Log_in_page a:hover{
+		color:blue;
+	
 }
 
 .Log_in_page h1 {
@@ -69,24 +74,12 @@ body {
 }
 
 .FN, .LN {
+
     width: 100%;
     box-sizing: border-box;
 	/* background-color:#0b25842b; */
 }
 
-.selection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
-	
-}
-
-.selection label {
-    display: inline-block;
-    margin: 0;
-}
 
 .em, .US, .PASS {
     display: block;
