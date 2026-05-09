@@ -1,84 +1,153 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1a242f;
-    font-family: Arial, sans-serif;
+*{
+		box-sizing:border-box;
+	}
+
+
+body{
+	overflow-x:hidden;
+	
 }
 
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.navbar{
+	display:flex;
+	justify-content:space-between;
+	background-color:#232f3e;
+	align-items:center;
+	padding: 15px 30px;
+	position:fixed;
+	width:100%;
+	top:0;
+	z-index:1000;
+}
+h1{
+	color:#ffbbbbdb;
+	margin:0;
+}
+.list{
+	list-style:none;
+	display:flex;
+	gap:20px;
+	
+	
+	padding:0;
+	margin:0;
 }
 
-.logo {
-    color: #f2a2a2;
-    font-size: 24px;
+.list li a {
+    color: #ede6e6ba;
     font-weight: bold;
+    font-size: 18px;
 }
 
-.nav-link {
-    color: white;
-    font-size: 16px;
+.list a{
+	display:inline-block;
+	transition:.5s ease;
+	text-decoration:none;
+	
+}
+.list a:hover{
+	transform:scale(1.1);
+	
 }
 
 
-.nav-center {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
 
-.search-container {
-    display: flex;
-    width: 60%;
+.searching{
+	
+	display:flex;
+	max-width:500px;
+	
+	justify-content:center;
+	
 }
-
-.search-container input {
-    width: 100%;
-    padding: 8px 15px;
-    border-radius: 20px 0 0 20px;
+.searching input {
+    width: 500px;
+    height: 40px;
+    padding: 0 15px;
     border: none;
+    border-radius: 15px;
     outline: none;
+    font-size: 16px;
+	transition:background-color .5s ease;
 }
 
-.btn-search {
-    padding: 8px 20px;
-    background-color: #ff9800;
+
+
+.searching input::placeholder {
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.searching button {
+    background-color: #ff9900;
     border: none;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
+    border-radius: 15px; 
+    padding: 0 20px;
     font-weight: bold;
+    cursor: pointer;
+	transition:background-color .5s ease;
+}
+.searching button:hover{
+	
+	background-color:#a4680d;
+}
+.Account{
+	display:flex;
+	gap:20px;
+}
+.Account button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+	transition: .5s ease;
+	
+}
+.Account button:hover{
+	transform:scale(1.1);
+	
 }
 
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
 
 .btn-signup {
-    background-color: #ff9800;
-    color: black;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
+    background-color: #ff9900;
+    color: #232f3e;
+	
+}
+.btn-signup a{
+	text-decoration:none;
+	color:black;
+	
 }
 
-.btn-signout {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
+
+ .btn-login a {
+	text-decoration:none;
+	color:white;
+
+ }	 
+   
+ .btn-login { 
+    background-color:transparent ;
+    color: white;
+    border: 1px solid white;
+	text-decoration:none;
+
 }
+.btn-signout{
+    color: white;
+    border: 1px solid white;
+
+	
+}
+.btn-signout a{
+	text-decoration:none;
+	color:black;
+	
+}
+
 
 .electronics {
     background-color: #4b4b8b;
