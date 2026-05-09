@@ -1,0 +1,51 @@
+.shipping-section {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.main-title {
+    color: #ffb300;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ffe0b2;
+    border-radius: 20px;
+    padding: 40px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.card h3 {
+    color: #ffb300;
+    font-size: 20px;
+    margin: 0;
+}

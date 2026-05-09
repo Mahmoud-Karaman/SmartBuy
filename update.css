@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: #f4f4f4;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+thead {
+    background-color: #ff9800;
+    color: black;
+}
+
+th {
+    padding: 15px;
+    font-weight: bold;
+}
+
+
+tbody tr {
+    background-color: #555;
+    color: white;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #777;
+}
+
+
+.price-input::-webkit-inner-spin-button,
+.price-input::-webkit-outer-spin-button {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.price-input {
+    background: #444;
+    border: 1px solid #777;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100px;
+    outline: none;
+}
+
+
+.action-container {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    gap: 5px;
+
+}
+
+
+.btn {
+    border: none;
+    padding: 6px 12px;
+
+    border-radius: 4px;
+
+    color: white;
+    font-size: 13px;
+
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.save {
+    background-color: #4caf50;
+}
+
+.delete {
+    background-color: #f44336;
+}
+
+th:last-child,
+td:last-child {
+    min-width: 180px;
+}
