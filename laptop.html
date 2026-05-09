@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Specifications</title>
+    <style>
+        /* Global Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { 
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); 
+            color: white; 
+            min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;
+        }
+        /* Product Styles */
+        .product-img {
+            width: 90%; max-width: 550px; border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5); margin-bottom: 30px;
+        }
+        .specs-container {
+            background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);
+            padding: 30px; border-radius: 15px; max-width: 700px; width: 100%;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        h1 { margin-bottom: 20px; font-size: 2.5rem; text-align: center; }
+        .specs-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .label { font-weight: bold; color: #00d2ff; }
+        @media (max-width: 600px) { .specs-list { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <h1>Ultimate Pro Laptop</h1>
+    <img src="https://unsplash.com" alt="Laptop" class="product-img">
+    <div class="specs-container">
+        <ul class="specs-list">
+            <li><span class="label">CPU:</span> Intel Core i9 14th Gen</li>
+            <li><span class="label">RAM:</span> 64GB DDR5</li>
+            <li><span class="label">Storage:</span> 2TB SSD NVMe</li>
+            <li><span class="label">Display:</span> 16" 4K OLED</li>
+            <li><span class="label">GPU:</span> RTX 4090 16GB</li>
+            <li><span class="label">Battery:</span> Up to 12 Hours</li>
+        </ul>
+    </div>
+</body>
+</html>
