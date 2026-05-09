@@ -14,7 +14,8 @@ body{
 	background-color:#232f3e;
 	align-items:center;
 	padding: 15px 30px;
-	position:sticky;
+	position:fixed;
+	width:100%;
 	top:0;
 	z-index:1000;
 }
@@ -75,16 +76,46 @@ h1{
     font-weight: bold;
     cursor: pointer;
     font-size: 14px;
+	transition: .5s ease;
+	
 }
+.Account button:hover{
+	transform:scale(1.1);
+	
+}
+
+
 .btn-signup {
     background-color: #ff9900;
     color: #232f3e;
+	
+}
+.btn-signup a{
+	text-decoration:none;
+	color:black;
+	
 }
 
-.btn-login, .btn-signin {
-    background-color: transparent;
+
+ .btn-login a {
+	text-decoration:none;
+	color:white;
+
+ }	 
+   
+ .btn-login { 
+    background-color:transparent ;
     color: white;
-    border: 1px solid white
+    border: 1px solid white;
+	text-decoration:none;
+
+}
+.btn-signin{
+	 background-color: transparent;
+    color: white;
+    border: 1px solid white;
+
+	
 }
 
 
@@ -109,34 +140,50 @@ h1{
 
 background-color:#bd91e0;
 
-width:30%;
+width:25%;
 
 height:70%;
 
 display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+flex-wrap:wrap;
+gap:60px;
 
 position:absolute;
+padding-top:10px;
 
-left:25px;
+left:10%;
 
-
-
-
-flex-direction:column;
 
 }
-.elm_1{
-	justify-content:center;
-	text-align:center;
-	margin:10px;
+.cnt_1 img{
+	object-fit: cover;
+	
+	width:25%;
+	
+	
+	
+	
+}
+.cnt_1 a{
+	display:inline-block;
+	position:relative;
+	bottom:10%;
+	left:2%;
+	font-size:25px;
+	transition:.5s ease;
+	
+	
+}
+.cnt_1 a:hover{
+	transform:scale(1.1);
+	
 	
 }
 
-.PS5{
 
-width:80%;
-
-}
 .cnt_2{
 	
 	background:#fbe0e0;
@@ -145,12 +192,13 @@ width:80%;
 	justify-content:center;
 	position:relative;
 	align-items:center;
-	width:33%;
+	width:28%;
 	height:70%;
 	height:auto;
 	left:20%;
 	padding-bottom:40px;
 	padding-top:30px;
+	margin-top:1%;
 	
 	
 	gap:70px;
@@ -160,6 +208,7 @@ width:80%;
 	
 }
 
+
 .cnt_2 img{
 	object-fit: cover;
 	
@@ -167,6 +216,19 @@ width:80%;
 	
 	
 }
+.cnt_2 a{
+	display:inline-block;
+	font-size:25px;
+	transition:.5s ease;
+	
+	
+}
+.cnt_2 a:hover{
+	transform:scale(1.1);
+	
+	
+}
+
 .link_mens{
 	
 	cursor:pointer;
@@ -214,7 +276,6 @@ width:80%;
 	
 	
 }
-
 
 
 
