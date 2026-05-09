@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Specs - Free Version</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { 
+            background: linear-gradient(135deg, #121212 0%, #333 100%); 
+            color: white; min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;
+        }
+        .product-img {
+            width: 85%; max-width: 500px; border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.7); margin-bottom: 30px;
+        }
+        .specs-container {
+            background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 15px;
+            max-width: 650px; width: 100%; border: 1px solid rgba(255,255,255,0.1);
+        }
+        h1 { margin-bottom: 20px; font-size: 2.2rem; color: #ffcc00; }
+        .specs-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .label { font-weight: bold; color: #ffcc00; }
+        @media (max-width: 600px) { .specs-list { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <h1>Sonic Elite Wireless</h1>
+    <!-- This is the free Pixabay image link -->
+    <img src="https://pixabay.com" alt="Headphones" class="product-img">
+    <div class="specs-container">
+        <ul class="specs-list">
+            <li><span class="label">Sound:</span> Surround Sound 7.1</li>
+            <li><span class="label">Battery:</span> 40 Hours Active</li>
+            <li><span class="label">Connection:</span> Bluetooth 5.0</li>
+            <li><span class="label">Mic:</span> Built-in Noise Reduction</li>
+            <li><span class="label">Weight:</span> 250g Ultra Light</li>
+            <li><span class="label">Control:</span> Touch Sensors</li>
+        </ul>
+    </div>
+</body>
+</html>

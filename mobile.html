@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Specifications</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { 
+            background: linear-gradient(135deg, #f7f9fc 0%, #e2e8f0 100%); 
+            color: #333; 
+            min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;
+        }
+        .product-img {
+            width: 90%; max-width: 450px; border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15); margin-bottom: 30px;
+        }
+        .specs-container {
+            background: rgba(0, 0, 0, 0.05); backdrop-filter: blur(10px);
+            padding: 30px; border-radius: 15px; max-width: 700px; width: 100%;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        h1 { margin-bottom: 20px; font-size: 2.5rem; text-align: center; }
+        .specs-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .label { font-weight: bold; color: #2563eb; }
+        @media (max-width: 600px) { .specs-list { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <h1>Galaxy X Smartphone</h1>
+    <img src="https://unsplash.com" alt="Mobile" class="product-img">
+    <div class="specs-container">
+        <ul class="specs-list">
+            <li><span class="label">Chipset:</span> Snapdragon 8 Gen 3</li>
+            <li><span class="label">Camera:</span> 200MP Ultra-Zoom</li>
+            <li><span class="label">Screen:</span> AMOLED 120Hz</li>
+            <li><span class="label">Memory:</span> 12GB RAM</li>
+            <li><span class="label">Charging:</span> 100W Fast Charge</li>
+            <li><span class="label">OS:</span> Android 14</li>
+        </ul>
+    </div>
+</body>
+</html>
