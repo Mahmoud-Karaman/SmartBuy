@@ -42,17 +42,17 @@ form.addEventListener("submit", function(e) {
   let valid = true;
 
   if (username.value.trim() === "") {
-    userError.innerText = "اسم المستخدم مطلوب";
+    userError.innerText = "Username is required";
     valid = false;
   } else {
     userError.innerText = "";
   }
 
   if (password.value.trim() === "") {
-    passError.innerText = "كلمة السر مطلوبة";
+    passError.innerText = "Password is required";
     valid = false;
   } else if (password.value.length < 6) {
-    passError.innerText = "كلمة السر لازم تكون 6 أحرف على الأقل";
+    passError.innerText = "Email Sent! Please check your inbox to proceed with resetting your password";
     valid = false;
   } else {
     passError.innerText = "";

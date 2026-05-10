@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+	
+	<!DOCTYPE html>
 <html lang="en">
 	<head>
     <title>Login Page</title>
@@ -14,18 +15,54 @@
 				<img src="profile_pic.png">
 			</a>	
 			<h1>Login page</h1>
-			<form class="ln">
-				<label>Username</label>
-				<input type="text" placeholder="Enter you username">
-				<label>Password</label>
-				<input type="Password" placeholder="Enter you Password">
-				<input type="submit" value="Login">
-				<a href="#">Forget your Password</a>
-			
-			
-			</form>
+<form class="ln" id="loginForm">
+  <label>Username</label>
+  <input type="text" id="username" placeholder="Enter your username">
+  <span class="error" id="userError"></span>
+
+  <label>Password</label>
+  <input type="password" id="password" placeholder="Enter your password">
+  <span class="error" id="passError"></span>
+
+  <input type="submit" value="Login">
+  <a href="#">Forget your Password</a>
+</form>
 		</div>
 		
 	
-	
+	<script>
+		const form = document.getElementById("loginForm");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const userError = document.getElementById("userError");
+const passError = document.getElementById("passError");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault(); 
+
+  let valid = true;
+
+  if (username.value.trim() === "") {
+    userError.innerText = "Username is required";
+    valid = false;
+  } else {
+    userError.innerText = "";
+  }
+
+  if (password.value.trim() === "") {
+    passError.innerText = "Password is required";
+    valid = false;
+  } else if (password.value.length < 6) {
+    passError.innerText = "Email Sent! Please check your inbox to proceed with resetting your password";
+    valid = false;
+  } else {
+    passError.innerText = "";
+  }
+
+  if (valid) {
+    alert(""Login Successful!"");
+  }
+});
+
+	</script>
 	</body>
