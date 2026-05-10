@@ -14,16 +14,18 @@
 				<img src="profile_pic.png">
 			</a>	
 			<h1>Login page</h1>
-			<form class="ln">
-				<label>Username</label>
-				<input type="text" placeholder="Enter you username">
-				<label>Password</label>
-				<input type="Password" placeholder="Enter you Password">
-				<input type="submit" value="Login">
-				<a href="#">Forget your Password</a>
-			
-			
-			</form>
+<form class="ln" id="loginForm">
+  <label>Username</label>
+  <input type="text" id="username" placeholder="Enter your username">
+  <span id="userError" class="error"></span>
+
+  <label>Password</label>
+  <input type="password" id="password" placeholder="Enter your password">
+  <span id="passError" class="error"></span>
+
+  <input type="submit" value="Login">
+  <a href="#">Forget your Password</a>
+</form>
 		</div>
 		
 	
