@@ -27,5 +27,39 @@
 		</div>
 		
 	
-	
+	<script>
+		const form = document.getElementById("loginForm");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const userError = document.getElementById("userError");
+const passError = document.getElementById("passError");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault(); 
+
+  let valid = true;
+
+  if (username.value.trim() === "") {
+    userError.innerText = "اسم المستخدم مطلوب";
+    valid = false;
+  } else {
+    userError.innerText = "";
+  }
+
+  if (password.value.trim() === "") {
+    passError.innerText = "كلمة السر مطلوبة";
+    valid = false;
+  } else if (password.value.length < 6) {
+    passError.innerText = "كلمة السر لازم تكون 6 أحرف على الأقل";
+    valid = false;
+  } else {
+    passError.innerText = "";
+  }
+
+  if (valid) {
+    alert("تم تسجيل الدخول بنجاح ");
+  }
+});
+
+	</script>
 	</body>
