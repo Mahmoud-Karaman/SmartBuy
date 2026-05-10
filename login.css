@@ -108,6 +108,13 @@ body{
 	font-size:17px;
 	transition: .5s ease;
 }
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
 .Log_in_page a :hover{
 	transform:scale(1.1);
 
