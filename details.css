@@ -1,5 +1,8 @@
 body{
 	overflow-x:hidden;
+	font-family: sans-serif;
+  background: #111;
+  color: white;
 
 }
 
@@ -21,6 +24,8 @@ h1{
 	list-style:none;
 	display:flex;
 	gap:20px;
+	position:relative;
+	right:30px;
 
 
 	padding:0;
@@ -30,7 +35,7 @@ h1{
 .list li a {
     color: #ede6e6ba;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .list a{
@@ -50,6 +55,7 @@ h1{
 
 	display:flex;
 	max-width:500px;
+	transform:translate(-60px,0);
 
 	justify-content:center;
 
@@ -87,11 +93,13 @@ h1{
 }
 .Account{
 	display:flex;
-	gap:20px;
+	gap:30px;
 }
 .Account button {
+	
+	transform:translate(-75px,0);
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     font-weight: bold;
     cursor: pointer;
@@ -100,7 +108,7 @@ h1{
 
 }
 .Account button:hover{
-	transform:scale(1.1);
+	transform:translate(-75px,0) scale(1.1);
 
 }
 
@@ -141,13 +149,6 @@ h1{
 	color:black;
 }
 
-
-
-body {
-  font-family: sans-serif;
-  background: #111;
-  color: white;
-}
 
 .details {
   position: absolute;
