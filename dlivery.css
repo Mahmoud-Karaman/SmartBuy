@@ -1,13 +1,11 @@
-*{
-		box-sizing:border-box;
-	}
-
 
 body{
 	overflow-x:hidden;
-	
-}
+	font-family: sans-serif;
+  background: #111;
+  color: white;
 
+}
 .navbar{
 	display:flex;
 	justify-content:space-between;
@@ -21,14 +19,15 @@ body{
 }
 h1{
 	color:#ffbbbbdb;
-	margin:0;
 }
 .list{
 	list-style:none;
 	display:flex;
 	gap:20px;
-	
-	
+	position:relative;
+	right:30px;
+
+
 	padding:0;
 	margin:0;
 }
@@ -36,29 +35,30 @@ h1{
 .list li a {
     color: #ede6e6ba;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .list a{
 	display:inline-block;
 	transition:.5s ease;
 	text-decoration:none;
-	
+
 }
 .list a:hover{
 	transform:scale(1.1);
-	
+
 }
 
 
 
 .searching{
-	
+
 	display:flex;
 	max-width:500px;
-	
+	transform:translate(-60px,0);
+
 	justify-content:center;
-	
+
 }
 .searching input {
     width: 500px;
@@ -81,45 +81,47 @@ h1{
 .searching button {
     background-color: #ff9900;
     border: none;
-    border-radius: 15px; 
+    border-radius: 15px;
     padding: 0 20px;
     font-weight: bold;
     cursor: pointer;
 	transition:background-color .5s ease;
 }
 .searching button:hover{
-	
+
 	background-color:#a4680d;
 }
 .Account{
 	display:flex;
-	gap:20px;
+	gap:30px;
 }
 .Account button {
+	
+	transform:translate(-75px,0);
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     font-weight: bold;
     cursor: pointer;
     font-size: 14px;
 	transition: .5s ease;
-	
+
 }
 .Account button:hover{
-	transform:scale(1.1);
-	
+	transform:translate(-75px,0) scale(1.1);
+
 }
 
 
 .btn-signup {
     background-color: #ff9900;
     color: #232f3e;
-	
+
 }
 .btn-signup a{
 	text-decoration:none;
 	color:black;
-	
+
 }
 
 
@@ -127,9 +129,9 @@ h1{
 	text-decoration:none;
 	color:white;
 
- }	 
-   
- .btn-login { 
+ }
+
+ .btn-login {
     background-color:transparent ;
     color: white;
     border: 1px solid white;
@@ -140,19 +142,44 @@ h1{
     color: white;
     border: 1px solid white;
 
-	
+
 }
 .btn-signout a{
 	text-decoration:none;
 	color:black;
-	
 }
+
+
+.btn {
+ 
+  border: none;
+  border-radius:15px;
+  cursor: pointer;
+  background: red;
+  color: white;
+}
+.btn:hover {
+  background: #e11a1a;
+}
+
+body.light-mode {
+  background-color: white !important;
+}
+
+body.light-mode .buy {
+  background: #111;
+  color: white;
+}
+
+
 
 
 
 .shipping-section {
     text-align: center;
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
+	padding:120px 20px 50px;
+	
     font-family: Arial, sans-serif;
 }
 
